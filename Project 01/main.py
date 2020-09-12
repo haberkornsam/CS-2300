@@ -1,4 +1,10 @@
 MATRIX_FILE = "matrixFile.txt"
+"""
+Name: Samuel Haberkorn
+Class: CS 2300
+Date: 09/12/2020
+Assignment: Project 1
+"""
 
 
 def main():
@@ -145,7 +151,7 @@ def get_next_char(file, prev_chars=""):
 
     if not len(char) == 0 and char not in [None, " ", "\n"]:
         return get_next_char(file, prev_chars+char)
-    return prev_chars if prev_chars is not "" else get_next_char(file)
+    return prev_chars if prev_chars != "" else get_next_char(file)
 
 
 if __name__ == '__main__':
