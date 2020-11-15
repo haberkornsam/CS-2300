@@ -1,7 +1,7 @@
 import numpy as np
 '''
 Samuel Haberkorn
-CS2300 - Computational Linear Algebra
+CS2300 - Computational Linear Algebra.3
 Project 3
 11/13/2020
 '''
@@ -45,7 +45,7 @@ def gatherSet():
 # function to handle the solving of system of equations
 def solve_system(a, b):
     try:
-        x = np.linalg.solve(a,b)
+        x = np.linalg.solve(a, b)
     except np.linalg.LinAlgError:
         return None
     return x
